@@ -10,14 +10,13 @@
 
 ### Description
 
-[Description of your app]
+Book Island helps users keep track of what books they have read or search for new books to read. They can create collections to organize their library and add books on the chosen collections. Users can also create notes on books. They can add text or a photo in every note. 
 
-Link to the file we used for brainstorming application ideas [Link](https://hackmd.io/dHzxx2hHToWoV7U8WVGMxQ) .
 ### App Evaluation
 
 - **Category:** Education
 - **Mobile:** Uses camera in notes to comment about the books.
-- **Story:** Allows users to search through a book database and search for their favorite books. They can create their own collection of books and write about what they think of them. 
+- **Story:** Allows users to search through a book database and search for their favorite books or get suggestions about what book to read next. They can create their own collection of books and write about what they think of them. 
 - **Market:** Any person that likes reading books would be interested in this app.
 - **Habit:** Motivate users to spend more time reading books instead of watching tiktok videos and encourage them to keep reading.
 - **Scope:** V1 would allow the user to search for books and add them to their collection and place notes on the books them have read or are reading. V2 would allow the user to also take photos in the notes section. V3 would include a dashboard that gives the user information about the time they have spent reading.
