@@ -12,9 +12,9 @@
 
 [Description of your app]
 
+Link to the file we used for brainstorming application ideas [Link](https://hackmd.io/dHzxx2hHToWoV7U8WVGMxQ) .
 ### App Evaluation
 
-[Evaluation of your app across the following attributes]
 - **Category:** Education
 - **Mobile:** Uses camera in notes to comment about the books.
 - **Story:** Allows users to search through a book database and search for their favorite books. They can create their own collection of books and write about what they think of them. 
@@ -43,9 +43,9 @@
 ### 2. Screen Archetypes
 
 - Login Screen
-  - click on the Email Address they want to login
+  - Click on the Email Address they want to login
 - Search Screen
-  - User can search their book 
+  - User can search their book
 - Collections
   - User can see their book collections
   - User can add new collections
@@ -67,6 +67,7 @@
 
 - Search
   - ==> Book list depending on the book or category searched.
+  - ==> Click on a specific book for more details
 - Collections
   - ==> Create new collection (Create collection activity)
   - ==> Click on a collection for details.
@@ -80,7 +81,7 @@
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="Wireframe.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
