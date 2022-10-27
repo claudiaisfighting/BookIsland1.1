@@ -80,7 +80,6 @@ Link to the file we used for brainstorming application ideas [Link](https://hack
 
 ## Wireframes
 
-[Add picture of your hand sketched wireframes in this section]
 <img src="Wireframe.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
