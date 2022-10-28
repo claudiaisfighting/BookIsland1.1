@@ -93,5 +93,3 @@ Book Island helps users keep track of what books they have read or search for ne
 <img src="https://github.com/BrajanHalili/BookIsland/blob/main/digital%20wireframing/Want%20to%20Read%20Page.jpg" width=600>
 <img src="https://github.com/BrajanHalili/BookIsland/blob/main/digital%20wireframing/Dashboard%20Page.jpg" width=600>
 <img src="https://github.com/BrajanHalili/BookIsland/blob/main/digital%20wireframing/setting%20Page.jpg" width=600>
-
-### [BONUS] Interactive Prototype
