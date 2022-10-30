@@ -55,7 +55,7 @@ class SearchDisplay : AppCompatActivity() {
                             val volumeInfo = book.getJSONObject("volumeInfo")
                             var model = BookEntity(null,null,null,null,null,null)
                             model.title = volumeInfo.getString("title")
-                            model.authors = volumeInfo.getJSONArray("authors")
+                            model.authors = volumeInfo.getString("authors")
                             model.thumbnail = volumeInfo.getJSONObject("imageLinks").getString("thumbnail")
                             model.description = volumeInfo.getString("description")
                             model.saleability = book.getJSONObject("saleInfo").getString("saleability")

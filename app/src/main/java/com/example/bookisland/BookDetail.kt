@@ -30,23 +30,10 @@ class BookDetail: AppCompatActivity() {
         //val book = intent.getSerializableExtra("Book Details") as BookEntity
 
         BookPrice.text = "Price: " + book.price.toString() + "USD"
-        BookTitle.text = book.title
+        BookTitle.text = "Title: " + book.title
         BookDescription.text = book.description
-        BookSaleability.text = book.saleability
-
-        //getting authors
-        var authors = ""
-        var i = 0
-        if(book.authors?.length() != 0)
-        {
-            while(i<book.authors!!.length() - 1)
-            {
-                authors = authors + book.authors!![i] + ", "
-                i++
-            }
-            authors = authors + book.authors!![i]
-        }
-        BookAuthors.text = authors
+        BookSaleability.text = "Availability: " + book.saleability
+        BookAuthors.text = book.authors
 
         Glide.with(this)
             .load(book.thumbnail)

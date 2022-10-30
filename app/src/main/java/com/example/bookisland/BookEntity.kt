@@ -10,8 +10,8 @@ import org.json.JSONArray
  data class BookEntity(
  @SerialName("title")
   var title: String?,
- @SerialName("authors[]")
-  var authors: JSONArray?,
+ @SerialName("authors")
+  var authors: String?,
  @SerialName("description")
   var description: String?,
  @SerialName("thumbnail")
