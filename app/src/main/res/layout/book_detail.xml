@@ -52,7 +52,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="40dp"
         android:hint="Description"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,4 +89,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BookTitle"
         app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/AddOrRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add or Remove"
+        android:layout_marginTop="332dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+    <Button
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toEndOf="@+id/AddOrRemove"
+        app:layout_constraintTop_toBottomOf="@+id/Description"
+        app:layout_constraintVertical_bias="0.994" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

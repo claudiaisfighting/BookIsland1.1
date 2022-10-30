@@ -1,5 +1,6 @@
 package com.example.bookisland
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -24,17 +25,32 @@ class BookDetail: AppCompatActivity() {
         BookDescription = findViewById(R.id.Description)
         BookSaleability = findViewById(R.id.saleability)
 
-        val movie = intent.getSerializableExtra("Book Details") as BookEntity
+        var bundle = intent.getExtras()
+        val book = bundle?.getSerializable("value") as BookEntity
+        //val book = intent.getSerializableExtra("Book Details") as BookEntity
 
-        MoviePopularity.text = "Popularity: " + movie.popularity.toString()
-        MovieReleaseDate.text = "Release Date: " + movie.release_date
-        MovieTitle.text = movie.title
-        MovieOverview.text = movie.overview
+        BookPrice.text = "Price: " + book.price.toString() + "USD"
+        BookTitle.text = book.title
+        BookDescription.text = book.description
+        BookSaleability.text = book.saleability
+
+        //getting authors
+        var authors = ""
+        var i = 0
+        if(book.authors?.length() != 0)
+        {
+            while(i<book.authors!!.length() - 1)
+            {
+                authors = authors + book.authors!![i] + ", "
+                i++
+            }
+            authors = authors + book.authors!![i]
+        }
+        BookAuthors.text = authors
 
         Glide.with(this)
-            .load("https://image.tmdb.org/t/p/w500" + movie.poster_path)
+            .load(book.thumbnail)
             .centerInside()
-            .into(MovieImage)
+            .into(BookImage)
     }
-}
 }
