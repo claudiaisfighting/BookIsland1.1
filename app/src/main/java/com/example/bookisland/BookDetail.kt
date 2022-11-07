@@ -1,11 +1,11 @@
 package com.example.bookisland
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import android.text.method.ScrollingMovementMethod
 
 class BookDetail: AppCompatActivity() {
     private lateinit var BookTitle: TextView
@@ -17,7 +17,6 @@ class BookDetail: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.book_detail)
-
         BookAuthors= findViewById(R.id.authors)
         BookPrice = findViewById(R.id.price)
         BookTitle = findViewById(R.id.BookTitle)
@@ -25,19 +24,21 @@ class BookDetail: AppCompatActivity() {
         BookDescription = findViewById(R.id.Description)
         BookSaleability = findViewById(R.id.saleability)
 
-        var bundle = intent.getExtras()
-        val book = bundle?.getSerializable("value") as BookEntity
-        //val book = intent.getSerializableExtra("Book Details") as BookEntity
+        var bundle = intent.extras
+        val book = bundle?.getSerializable("value") as Book
+        //val book = intent.getSerializableExtra("Book Details") as Book
 
         BookPrice.text = "Price: " + book.price.toString() + "USD"
         BookTitle.text = "Title: " + book.title
         BookDescription.text = book.description
         BookSaleability.text = "Availability: " + book.saleability
-        BookAuthors.text = book.authors
-
+        BookAuthors.text = "Authors: " + book.authors
+        BookDescription.movementMethod = ScrollingMovementMethod()
         Glide.with(this)
             .load(book.thumbnail)
             .centerInside()
             .into(BookImage)
     }
+
 }
+

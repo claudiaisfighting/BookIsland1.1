@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">BookIsland</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">BookIsland(2.0)</string>
+    <string name="welcome">Welcome!</string>
+    <string name="button">Button</string>
+    <string name="search">Search</string>
+    <string name="collections">Collections</string>
+    <string name="settings">Settings</string>
 </resources>

@@ -1,23 +1,24 @@
 package com.example.bookisland
 
 import androidx.annotation.Keep
+import androidx.room.Entity
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import org.json.JSONArray
 
-/**@Keep
+
+@Keep
 @Serializable
- data class BookEntity(
+ data class Book(
  @SerialName("title")
-  var title: String?,
+ var title: String?,
  @SerialName("authors")
-  var authors: String?,
+ var authors: String?,
  @SerialName("description")
-  var description: String?,
+ var description: String?,
  @SerialName("thumbnail")
-  var thumbnail: String?,
+ var thumbnail: String?,
  @SerialName("saleability")
-  var saleability: String?,
+ var saleability: String?,
  @SerialName("amount")
-  var price: Double?, ) : java.io.Serializable
-{}**/
+ var price: Double?, ) : java.io.Serializable
+{}
